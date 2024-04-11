@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradientbcg">
+
+    <!-- Button to add family members -->
+    <Button
+        android:id="@+id/add_member_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_family_member" />
+
+    <!-- Layout for adding family members -->
+    <LinearLayout
+        android:id="@+id/family_members_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- EditText fields for family member details -->
+        <EditText
+            android:id="@+id/family_member_1_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints="text"
+            android:background="@drawable/border"
+            android:hint="@string/family_member_name"
+            android:inputType="text"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/family_member_1_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints="number"
+            android:background="@drawable/border"
+            android:hint="@string/family_member_phone_number"
+            android:inputType="phone"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/family_member_1_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints="number"
+            android:background="@drawable/border"
+            android:hint="@string/family_member_email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+    <!-- Spinner to display existing family members -->
+    <Spinner
+        android:id="@+id/family_members_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp" />
+
+    <!-- Button to send alert to selected family members -->
+    <Button
+        android:id="@+id/send_alert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="150dp"
+        android:text="@string/send_alert" />
+
+    <Button
+        android:id="@+id/remove_member_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove" />
+
+    <Button
+        android:id="@+id/edit_member_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit" />
+
+
+</LinearLayout>

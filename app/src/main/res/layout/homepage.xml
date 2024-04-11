@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="HomeActivity"
+    android:background="@drawable/gradientbcg">
+
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/profile_icon_description"
+        android:src="@drawable/profile_picture" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/mainLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_below="@id/profile_icon"-->
+<!--        android:layout_marginTop="16dp">-->
+
+<!--    &lt;!&ndash; Profile information will be added here dynamically &ndash;&gt;-->
+<!--    </LinearLayout>-->
+
+    <!-- profile_info_dialog.xml -->
+
+
+    <Button
+        android:id="@+id/activate_app"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="#634D4D"
+        android:text="@string/activate_app"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <!-- Report and Police Station Fields -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/police1"
+        android:layout_below="@+id/activate_app"
+        android:layout_margin="16dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/report"
+            android:layout_weight="1"
+            android:hint="@string/get_location"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="#058505"
+            android:textColor="#000"
+            android:autofillHints="text" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/police_station"
+            android:textStyle="bold"
+            android:hint="@string/police_station"
+            android:backgroundTint="#058505"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white"
+            android:autofillHints="click" />
+
+    </LinearLayout>
+
+    <!-- Family Member Field -->
+
+    <!-- Feedback Field -->
+
+    <Button
+        android:id="@+id/feedback_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/family_member"
+        android:backgroundTint="#008000"
+        android:textStyle="bold"
+        android:hint="@string/feedback"
+        android:textColor="#000"
+        android:autofillHints="number" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/police1"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#008000"
+        android:drawableStart="@drawable/add_person1"
+        android:drawablePadding="20dp"
+        android:id="@+id/family_member"
+        android:hint="@string/family_member"
+        android:textColor="#000" />
+</RelativeLayout>
